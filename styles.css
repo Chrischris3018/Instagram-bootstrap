@@ -1,0 +1,45 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(192, 182, 182);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  #BCPF {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+  }
+  #BCPF2 {
+    width: 30%;
+    align-self: flex-start;
+    padding: 0px 20px 0px; 
+    box-sizing: border-box;
+    font-weight: bolder;
+  }
+  .postTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0px 20px 0px;
+  }
+  data {
+    color: #6c757d;
+    font-size: 2em;
+  }
+  .post {
+    background-color: white;
+    width: 60%;
+    margin: 20px;
+  }
+  .postImage {
+    width: 100%;
+  }
+  .postText{
+    padding: 0px 20px 0px;
+  }
