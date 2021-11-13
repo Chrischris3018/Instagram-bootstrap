@@ -1,59 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Document</title>
-  </head>
-  <body>
-    <div id="BCPF"><h1 id="BCPF2"><b>Breathe Code Photo Feed</b></h1></div>
-    <div class="post">
-      <div class="postTitle">
-        <h1>My first photo</h1>
-        <data value="page 1/4"> 1/4 </data>
-      </div>
-      <img class="postImage"
-      src=https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg>
-      <p class="postText">
-        This is my first photo of the feed. This is a multi line comment for
-        testing purposed. I am learning to code with <b>#BreatheCode</b>
-      </p>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="Navbar">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Fixed top</a>
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-success me-3">Success</button>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <hr class="m-1 flex-grow">
+                            </hr>
+                            <li><a class="dropdown-item" href="#">Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
-    <div class="post">
-        <div class="postTitle">
-      <h1>Some cute thing</h1>
-      <data value="page 2/4" class="pageNumber"> 2/4 </data>
-      </div>
-      <img class="postImage"
-      src=https://imgc.artprintimages.com/img/print/pug-on-skateboard_u-l-q106ayq0.jpg?artHeight=550&artPerspective=n&artWidth=550&background=fbfbfb>
-      <p class="postText">The internet approves this cute dog...<b>#BreatheCode</</p>
+    <!-- Pills -->
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" aria-current="page" href="#photo-grid">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#post">Link</a>
+        </li>
+    </ul>
+    <!-- Photo grid -->
+    <div class="tab-pane active" id="photo-grid">
+        <div class="row">
+            <div class="col">
+                <img src="https://source.unsplash.com/1600x900/?nature" class="img-fluid">
+            </div>
+            <div class="col">
+                <img src="https://source.unsplash.com/1600x900/?water" class="img-fluid">
+            </div>
+            <div class="col">
+                <img src="https://source.unsplash.com/1600x900/?cars" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"><img src="https://source.unsplash.com/1600x900/?fish" alt="" class="img-fluid"></div>
+            <div class="col"><img src="https://source.unsplash.com/1600x900/?people" alt="" class="img-fluid"></div>
+            <div class="col"><img src="https://source.unsplash.com/1600x900/?pets" alt="" class="img-fluid"></div>
+        </div>
+        <div class="row">
+            <div class="col"><img src="https://source.unsplash.com/1600x900/?airplane" alt="" class="img-fluid"></div>
+            <div class="col"><img src="https://source.unsplash.com/1600x900/?house" alt="" class="img-fluid"></div>
+            <div class="col"><img src="https://source.unsplash.com/1600x900/?rock" alt="" class="img-fluid"></div>
+        </div>
     </div>
-    <div class="post">
-        <div class="postTitle">
-      <h1>There's a papparazzi around</h1>
-      <data value="page 3/4"> 3/4 </data>
-      </div>
-      <img class="postImage"
-      src=https://picjumbo.com/wp-content/uploads/business-woman-working-on-laptop-in-her-office-free-photo-2210x1473.jpg>
-      <p class="postText">
-        This is me waiting for the screen to show my awesome first website made
-        at <b>#BreatheCode</b>
-      </p>
+    <!-- Post -->
+    <div id="post" class="tab-pane fade">
+        <div class="post">
+            <div class="postTitle">
+                <h1>My first photo</h1>
+                <data value="page 1/4"> 1/4 </data>
+            </div>
+            <img class="postImage" src=https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg>
+            <p class="postText">
+                This is my first photo of the feed. This is a multi line comment for
+                testing purposed. I am learning to code with <b>#BreatheCode</b>
+            </p>
+        </div>
+        <div class="post">
+            <div class="postTitle">
+                <h1>Some cute thing</h1>
+                <data value="page 2/4" class="pageNumber"> 2/4 </data>
+            </div>
+            <img class="postImage"
+                src=https://imgc.artprintimages.com/img/print/pug-on-skateboard_u-l-q106ayq0.jpg?artHeight=550&artPerspective=n&artWidth=550&background=fbfbfb>
+            <p class="postText">The internet approves this cute dog...<b>#BreatheCode</< /p>
+        </div>
+        <div class="post">
+            <div class="postTitle">
+                <h1>There's a papparazzi around</h1>
+                <data value="page 3/4"> 3/4 </data>
+            </div>
+            <img class="postImage"
+                src=https://picjumbo.com/wp-content/uploads/business-woman-working-on-laptop-in-her-office-free-photo-2210x1473.jpg>
+            <p class="postText">
+                This is me waiting for the screen to show my awesome first website made
+                at <b>#BreatheCode</b>
+            </p>
+        </div>
+        <div class="post">
+            <div class="postTitle">
+                <h1>And of course...food!</h1>
+                <data value="page 4/4"> 4/4 </data>
+            </div>
+            <img class="postImage" src=https://thecozycook.com/wp-content/uploads/2019/08/Bolognese-Sauce-500x500.jpg>
+            <p class="postText">Because no photo feed is cool without it!<b>#BreatheCode</b></p>
+        </div>
     </div>
-    <div class="post">
-        <div class="postTitle">
-      <h1>And of course...food!</h1>
-      <data value="page 4/4"> 4/4 </data>
-      </div>
-      <img class="postImage"
-      src=https://thecozycook.com/wp-content/uploads/2019/08/Bolognese-Sauce-500x500.jpg>
-      <p class="postText">Because no photo feed is cool without it!<b>#BreatheCode</b></p>
-    </div>
-  </body>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
