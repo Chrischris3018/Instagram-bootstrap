@@ -14,12 +14,15 @@
     <title>Document</title>
 </head>
 
-<body class="">
+<body class="bg-dark">
     <!-- Navbar -->
     <div id="Navbar" class="sticky-top">
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><i class="fab fa-instagram"></i><i class="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/800px-Instagram_logo.svg.png"></i></a>
+                <a class="navbar-brand" href="#"><i class="fab fa-instagram bg-white"></i>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/320px-Instagram_logo.svg.png" class="img-fluid" style="
+                    height: 36px;
+                    width: 101px;"></a>
                 <div class="d-flex justify-content-end">
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
                         data-bs-whatever="@mdo">Open modal for @mdo</button>
@@ -69,7 +72,7 @@
         </div>
     </div>
     <!-- Pills -->
-    <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+    <ul class="nav nav-pills justify-content-center bg-white mb-5" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
                 type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
@@ -81,8 +84,8 @@
                     class="fas fa-square"></i></button>
         </li>
     </ul>
-    <!-- 1st post -->
-    <div class="tab-content" id="pills-tabContent">
+    <!-- 1st page -->
+    <div class="tab-content row justify-content-md-center" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
             <div class="tab-pane fade show active" id="photo-grid">
                 <div class="row">
@@ -99,15 +102,18 @@
                 <div class="row">
                     <div class="col p-1"><img src="https://source.unsplash.com/1600x900/?fish" alt="" class="img-fluid">
                     </div>
-                    <div class="col p-1"><img src="https://source.unsplash.com/1600x900/?people" alt="" class="img-fluid">
+                    <div class="col p-1"><img src="https://source.unsplash.com/1600x900/?people" alt=""
+                            class="img-fluid">
                     </div>
                     <div class="col p-1"><img src="https://source.unsplash.com/1600x900/?pets" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col p-1"><img src="https://source.unsplash.com/1600x900/?airplane" alt="" class="img-fluid">
+                    <div class="col p-1"><img src="https://source.unsplash.com/1600x900/?airplane" alt=""
+                            class="img-fluid">
                     </div>
-                    <div class="col p-1"><img src="https://source.unsplash.com/1600x900/?house" alt="" class="img-fluid">
+                    <div class="col p-1"><img src="https://source.unsplash.com/1600x900/?house" alt=""
+                            class="img-fluid">
                     </div>
                     <div class="col p-1"><img src="https://source.unsplash.com/1600x900/?rock" alt="" class="img-fluid">
                     </div>
@@ -115,50 +121,36 @@
             </div>
         </div>
         <!-- 2nd page -->
-            <div id="pills-profile" class="tab-pane fade text-center" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="post">
-                    <div class="postTitle">
-                        <h1>My first photo</h1>
-                        <data value="page 1/4"> 1/4 </data>
-                    </div>
-                    <img class="postImage" src=https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg>
-                    <p class="postText">
-                        This is my first photo of the feed. This is a multi line comment for
-                        testing purposed. I am learning to code with <b>#BreatheCode</b>
-                    </p>
+        <div id="pills-profile" class="tab-pane fade text-center bg-dark col-7" role="tabpanel"
+            aria-labelledby="pills-profile-tab">
+            <div class="rounded">
+                <div class="postTitle d-flex justify-content-between bg-white rounded-top">
+                    <h1 class="m-3">My first photo</h1>
+                    <h1 value="page 12/14" class="text-muted d-flex align-items-center m-3"> 12/14 </h1>
                 </div>
-                <div class="post">
-                    <div class="postTitle">
-                        <h1>Some cute thing</h1>
-                        <data value="page 2/4" class="pageNumber"> 2/4 </data>
-                    </div>
-                    <img class="postImage"
-                        src="https://imgc.artprintimages.com/img/print/pug-on-skateboard_u-l-q106ayq0.jpg?artHeight=550&artPerspective=n&artWidth=550&background=fbfbfb">
-                    <p class="postText">The internet approves this cute dog...<b>#BreatheCode</b></p>
-                </div>
-                <div class="post">
-                    <div class="postTitle">
-                        <h1>There's a papparazzi around</h1>
-                        <data value="page 3/4"> 3/4 </data>
-                    </div>
-                    <img class="postImage"
-                        src=https://picjumbo.com/wp-content/uploads/business-woman-working-on-laptop-in-her-office-free-photo-2210x1473.jpg>
-                    <p class="postText">
-                        This is me waiting for the screen to show my awesome first website made
-                        at <b>#BreatheCode</b>
-                    </p>
-                </div>
-                <div class="post">
-                    <div class="postTitle">
-                        <h1>And of course...food!</h1>
-                        <data value="page 4/4"> 4/4 </data>
-                    </div>
-                    <img class="postImage"
-                        src=https://thecozycook.com/wp-content/uploads/2019/08/Bolognese-Sauce-500x500.jpg>
-                    <p class="postText">Because no photo feed is cool without it!<b>#BreatheCode</b></p>
+                <img class="postImage img-fluid" src=https://source.unsplash.com/1600x900/?nature>
+                <div class="font-weight-bold bg-white ps-2 pt-1 pb-1" style="text-align: start;"><b>23 Likes</b></div>
+                <p class="postText bg-white m-0 px-2" style="text-align: start;">
+                    This is my first photo of the feed. This is a multi line comment for
+                    testing purposes. I am learning to code with #BreatheCode
+                </p>
+                <div class="bg-white d-flex flex-row mb-5 rounded-bottom">
+                    <i class="far fa-heart bg-white d-flex align-items-center p-3 rounded-bottom"></i>
+                    <input type="text" class="form-control bg-white border-0" placeholder="Comment..."></input>
+                    <i class="fas fa-ellipsis-v d-flex align-items-center py-3 px-5"></i>
                 </div>
             </div>
+            <div class="bg-dark"></div>
+            <div class="post">
+                <div class="postTitle d-flex justify-content-between bg-white">
+                    <h1 class="m-3">My first photo</h1>
+                    <h1 value="page 1/9" class="text-muted d-flex align-items-center m-3"> 1/9 </h1>
+                </div>
+                <img class="postImage img-fluid" src="https://source.unsplash.com/1600x900/?water">
+                <p class="postText bg-white">The internet approves this cute dog...<b>#BreatheCode</b></p>
+            </div>
         </div>
+    </div>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
